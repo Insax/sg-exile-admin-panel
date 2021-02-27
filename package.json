@@ -12,7 +12,8 @@
     "start": "HOST=sgadmin.test react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "tailwind": "cross-env ./node_modules/.bin/tailwind build ./resources/react-app/src/assets/tailwind.css -c ./tailwind.config.js -o ./resources/react-app/src/assets/output.css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,5 +29,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3"
   }
 }
